@@ -1,5 +1,3 @@
-const str = "Ayush";
 
-const str1 =new String('Ayush');
-
-console.log(str + str1);
+let mydate = new Date()
+console.log(mydate.toLocaleString())
