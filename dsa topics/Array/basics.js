@@ -21,6 +21,28 @@ arr.shift()  //to remove first element
 
 const arru = [123,561,4,5]
 
-arru.forEach(i=>console.log(i))
+// arru.forEach(i=>console.log(i))
+
+// if(''){
+    // console.log('jgj');
+    // }
+    // console.log(false===false===true);
+
+    let a = 654343
+    // console.log(a.length);
+
+    // for
+
+let num = 25865
+let rev = 0
+while(num!==0){
+    let digit = num%10
+    rev=rev*10+digit
+    num=num/10
+}
+console.log(rev,num);
+
+    
+
 
 

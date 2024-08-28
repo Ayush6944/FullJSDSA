@@ -1,0 +1,12 @@
+important concept of js
+
+1.hoisting
+2.destructing
+3.== ====
+4.type cohesion
+5.scope- block,fuction.local,global
+6.Object and Array Methods: map(), filter(), reduce(), 
+ forEach(), push(), pop(), shift(), unshift(), splice(), slice(), find(), findIndex(), Object.keys(), Object.values()
+7.this . keyword
+8.map filter reduce
+9.

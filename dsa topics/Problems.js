@@ -73,23 +73,23 @@ const arr1=arr.filter((item,index)=>arr.indexOf(item)===index)
 const arr=[-2,-5,5,8,-5,8,74, -99,26]
 
 function largsubarr(arr){
-    let maxsum=arr[0]
-    let ar=[]
-    let startindex =0
-    let endindex =0
+    let maxsum=arr[0]   //assume the first array element to be maxsum
+    // let ar=[]    //initialize empty array 
+    let startindex =0  //first index
+    let endindex =0  // endindex 
     for(let i=0;i<arr.length;i++){
-        let currsum=0
+        let currsum=0    
         for(let j=i;j<arr.length;j++){
             currsum+=arr[j]
             if(currsum>maxsum){
                maxsum = currsum
-               ar.push(arr[j])
+            //    ar.push(arr[j])
                startindex=i
                endindex=j
             }
         }
     }
-    console.log(maxsum,arr.slice(startindex,endindex+1));
+    // console.log(maxsum,arr.slice(startindex,endindex+1));
 }
 largsubarr([-2,10,9,3,56,-8,7,-4] )
 
@@ -120,3 +120,30 @@ function optimizedsum(arr){
 
 }
 optimizedsum([-2,10,9,3,56,-8,7,-4] )
+
+
+// again practise
+
+function subarr(arr){
+    let sum = arr[0]
+    let str =0 
+    let end =0 
+    for(let i =0;i<arr.length ; i++){
+        let currsum = 0 
+        for(let j=i;j<arr.length;j++){
+            currsum+=arr[j]
+            if(currsum>sum){
+                sum = currsum
+                str= i
+                end= j
+            }
+        }
+    }
+    console.log(arr.slice(str,end));
+    
+}
+
+// subarr(arr)
+
+// most optimized way for this is kadane algo
+
